@@ -133,11 +133,60 @@
     .float-consult { background: var(--blue); }
 
     @media (max-width: 640px) {
+      /* 전체 */
+      body { word-break: keep-all; overflow-wrap: break-word; }
+      section { padding: 48px 16px; }
+      .wrap { padding: 0 16px; }
+      .section-head h2 { font-size: 22px; }
+      .section-head p { font-size: 14px; }
+
+      /* 네비 */
       .nav-menu { display: none; }
-      .hero h1 { font-size: 26px; }
-      .hero-stats { gap: 20px; }
+      .nav-logo { font-size: 14px; }
+      .nav-cta { padding: 8px 12px; font-size: 12px; }
+
+      /* 히어로 */
+      .hero { padding: 48px 16px 56px; }
+      .hero h1 { font-size: 22px; line-height: 1.45; }
+      .hero-desc { font-size: 14px; }
+      .hero-badge { font-size: 12px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .hero-stats { gap: 16px; flex-wrap: wrap; }
+      .hero-stat-val { font-size: 22px; }
+      .hero-stat-label { font-size: 11px; }
+      .divider-v { display: none; }
+
+      /* 서비스 카드 */
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card h3 { font-size: 15px; }
+      .service-card p { font-size: 13px; }
+
+      /* 프로세스 */
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .process-step { padding: 16px 10px; }
+      .process-step h4 { font-size: 13px; }
+      .process-step p { font-size: 11px; }
+
+      /* 성공사례 */
+      .cases-grid { grid-template-columns: 1fr; }
+      .case-amount { font-size: 20px; }
+
+      /* 폼 */
       .form-row { grid-template-columns: 1fr; }
-      .float-cta { bottom: 16px; right: 16px; }
+      .form-card { padding: 20px 16px; }
+      .consult-wrap { padding: 0; }
+
+      /* FAQ */
+      .faq-wrap { padding: 0; }
+      .faq-q { font-size: 13px; }
+      .faq-a { font-size: 13px; }
+
+      /* 플로팅 버튼 */
+      .float-cta { bottom: 16px; right: 12px; gap: 8px; }
+      .float-btn { padding: 11px 14px; font-size: 13px; }
+
+      /* 푸터 */
+      .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
