@@ -1,0 +1,61 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2d6e"/>
+      <stop offset="60%" style="stop-color:#1A4FA0"/>
+      <stop offset="100%" style="stop-color:#2563c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 장식 원 -->
+  <circle cx="1050" cy="120" r="220" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="150" cy="530" r="160" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- 좌측 강조 바 -->
+  <rect x="80" y="160" width="6" height="120" rx="3" fill="#93c5fd"/>
+
+  <!-- 로고 아이콘 박스 -->
+  <rect x="100" y="80" width="56" height="56" rx="10" fill="rgba(255,255,255,0.15)"/>
+  <text x="128" y="118" font-size="28" text-anchor="middle" fill="white" font-family="sans-serif">🏦</text>
+
+  <!-- 업체명 -->
+  <text x="172" y="103" font-size="22" fill="rgba(255,255,255,0.7)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="400">소상공인지원센터</text>
+  <text x="172" y="128" font-size="22" fill="#93c5fd" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="600">부산점</text>
+
+  <!-- 메인 타이틀 -->
+  <text x="100" y="230" font-size="52" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">정책자금, 혼자 고민하지 마세요</text>
+  <text x="100" y="300" font-size="48" fill="#93c5fd" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">전문가가 처음부터 끝까지 함께합니다</text>
+
+  <!-- 서브 설명 -->
+  <text x="100" y="370" font-size="28" fill="rgba(255,255,255,0.8)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">창업자금 · 운전자금 · 시설자금 · 재도전자금 등 13종 정책자금</text>
+  <text x="100" y="410" font-size="28" fill="rgba(255,255,255,0.8)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">무료 자금진단 · 신청 대행 · 심사 동행</text>
+
+  <!-- 구분선 -->
+  <line x1="100" y1="450" x2="1100" y2="450" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- 통계 -->
+  <text x="130" y="510" font-size="40" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">1,200+</text>
+  <text x="130" y="545" font-size="20" fill="rgba(255,255,255,0.6)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">누적 지원 건수</text>
+
+  <line x1="340" y1="470" x2="340" y2="560" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <text x="380" y="510" font-size="40" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">850억+</text>
+  <text x="380" y="545" font-size="20" fill="rgba(255,255,255,0.6)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">총 지원금액</text>
+
+  <line x1="600" y1="470" x2="600" y2="560" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <text x="640" y="510" font-size="40" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">94%</text>
+  <text x="640" y="545" font-size="20" fill="rgba(255,255,255,0.6)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">승인률</text>
+
+  <line x1="820" y1="470" x2="820" y2="560" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- CTA 버튼 -->
+  <rect x="860" y="480" width="260" height="60" rx="30" fill="white"/>
+  <text x="990" y="518" font-size="24" text-anchor="middle" fill="#1A4FA0" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">📞 무료상담 신청</text>
+
+  <!-- 전화번호 -->
+  <text x="990" y="590" font-size="22" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">010-3680-6229</text>
+</svg>
