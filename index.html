@@ -132,61 +132,77 @@
     .float-call { background: #16a34a; }
     .float-consult { background: var(--blue); }
 
+    /* ── PC 기본값은 위 스타일 그대로 유지 ── */
+
     @media (max-width: 640px) {
-      /* 전체 */
-      body { word-break: keep-all; overflow-wrap: break-word; }
-      section { padding: 48px 16px; }
-      .wrap { padding: 0 16px; }
-      .section-head h2 { font-size: 22px; }
-      .section-head p { font-size: 14px; }
+      /* 전체 기본 */
+      body { word-break: keep-all; overflow-wrap: break-word; font-size: 16px; line-height: 1.75; }
+      section { padding: 52px 18px; }
+      .wrap { padding: 0 18px; }
+
+      /* 섹션 제목 */
+      .section-head h2 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+      .section-head p { font-size: 15px; line-height: 1.6; }
 
       /* 네비 */
       .nav-menu { display: none; }
-      .nav-logo { font-size: 14px; }
-      .nav-cta { padding: 8px 12px; font-size: 12px; }
+      .nav-logo { font-size: 15px; }
+      .nav-cta { padding: 10px 14px; font-size: 14px; }
 
       /* 히어로 */
-      .hero { padding: 48px 16px 56px; }
-      .hero h1 { font-size: 22px; line-height: 1.45; }
-      .hero-desc { font-size: 14px; }
-      .hero-badge { font-size: 12px; }
-      .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
-      .hero-stats { gap: 16px; flex-wrap: wrap; }
-      .hero-stat-val { font-size: 22px; }
-      .hero-stat-label { font-size: 11px; }
+      .hero { padding: 52px 18px 60px; }
+      .hero-badge { font-size: 13px; padding: 7px 16px; }
+      .hero h1 { font-size: 26px; line-height: 1.45; font-weight: 700; }
+      .hero-desc { font-size: 15px; line-height: 1.75; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .btn { font-size: 16px; padding: 14px 24px; }
+      .hero-phone { font-size: 17px; }
+      .hero-stats { gap: 18px; flex-wrap: wrap; margin-top: 28px; }
+      .hero-stat-val { font-size: 26px; }
+      .hero-stat-label { font-size: 13px; }
       .divider-v { display: none; }
 
       /* 서비스 카드 */
-      .services-grid { grid-template-columns: 1fr; }
-      .service-card h3 { font-size: 15px; }
-      .service-card p { font-size: 13px; }
+      .services-grid { grid-template-columns: 1fr; gap: 14px; }
+      .service-card { padding: 22px 18px; }
+      .service-card h3 { font-size: 17px; margin-bottom: 8px; }
+      .service-card p { font-size: 14px; line-height: 1.7; }
+      .service-card > div[style*="font-size:11px"] { font-size: 13px !important; }
+      .service-card > div[style*="font-size:12px"] { font-size: 13px !important; }
 
       /* 프로세스 */
-      .process-grid { grid-template-columns: 1fr 1fr; }
-      .process-step { padding: 16px 10px; }
-      .process-step h4 { font-size: 13px; }
-      .process-step p { font-size: 11px; }
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .process-step { padding: 18px 10px; }
+      .process-step h4 { font-size: 15px; }
+      .process-step p { font-size: 13px; line-height: 1.5; }
 
       /* 성공사례 */
-      .cases-grid { grid-template-columns: 1fr; }
-      .case-amount { font-size: 20px; }
+      .cases-grid { grid-template-columns: 1fr; gap: 14px; }
+      .case-amount { font-size: 24px; }
+      .case-desc { font-size: 14px; line-height: 1.7; }
 
       /* 폼 */
-      .form-row { grid-template-columns: 1fr; }
-      .form-card { padding: 20px 16px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      .form-card { padding: 24px 18px; }
       .consult-wrap { padding: 0; }
+      .form-group label { font-size: 14px; margin-bottom: 8px; }
+      input, select, textarea { font-size: 15px; padding: 12px 14px; }
+      .form-submit { font-size: 17px; padding: 16px; }
 
       /* FAQ */
       .faq-wrap { padding: 0; }
-      .faq-q { font-size: 13px; }
-      .faq-a { font-size: 13px; }
+      .faq-item { padding: 18px; }
+      .faq-q { font-size: 15px; margin-bottom: 10px; }
+      .faq-a { font-size: 14px; line-height: 1.75; }
 
       /* 플로팅 버튼 */
-      .float-cta { bottom: 16px; right: 12px; gap: 8px; }
-      .float-btn { padding: 11px 14px; font-size: 13px; }
+      .float-cta { bottom: 16px; right: 12px; gap: 10px; }
+      .float-btn { padding: 13px 18px; font-size: 15px; }
 
       /* 푸터 */
-      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .footer-name { font-size: 16px; }
+      .footer-info { font-size: 14px; line-height: 2; }
     }
   </style>
 </head>
