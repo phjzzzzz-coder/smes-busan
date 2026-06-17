@@ -795,7 +795,7 @@
         </div>
         <div class="form-group" style="margin-bottom:0;">
           <label>연락처 *</label>
-          <input id="f-phone" type="tel" placeholder="010-0000-0000">
+          <input id="f-phone" type="tel" placeholder="010-0000-0000" oninput="formatPhone(this)" maxlength="13">
         </div>
       </div>
       <div class="form-group" style="margin-top:16px;">
@@ -899,6 +899,19 @@
 
 <script>
   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwfCfJ3WWPi3BQq1ffsEYk-eCs2U6_ii_TZUw2ZGFJd262a7thWQcZv-XnzJ9tEzGuz/exec';
+
+  function formatPhone(input) {
+    let val = input.value.replace(/\D/g, '').substring(0, 11);
+    if (val.startsWith('02')) {
+      if (val.length <= 2) input.value = val;
+      else if (val.length <= 6) input.value = val.slice(0,2) + '-' + val.slice(2);
+      else input.value = val.slice(0,2) + '-' + val.slice(2,6) + '-' + val.slice(6);
+    } else {
+      if (val.length <= 3) input.value = val;
+      else if (val.length <= 7) input.value = val.slice(0,3) + '-' + val.slice(3);
+      else input.value = val.slice(0,3) + '-' + val.slice(3,7) + '-' + val.slice(7);
+    }
+  }
 
   function submitForm(btn) {
     const name     = document.getElementById('f-name').value.trim();
