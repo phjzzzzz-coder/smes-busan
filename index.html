@@ -19,7 +19,7 @@
   <meta property="og:title" content="소상공인지원센터 부산점 | 2026 정책자금 무료진단">
   <meta property="og:description" content="부산 소상공인·법인 맞춤 정책자금 무료 진단. 창업·운전·시설·재도전 등 13종 자금 신청 대행. 승인률 94%. 지금 바로 무료상담 신청하세요.">
   <meta property="og:url" content="https://phjzzzzz-coder.github.io/smes-busan/">
-  <meta property="og:image" content="https://phjzzzzz-coder.github.io/smes-busan/og-image.PNG">
+  <meta property="og:image" content="https://phjzzzzz-coder.github.io/smes-busan/og-image.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
@@ -28,10 +28,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="소상공인지원센터 부산점 | 2026 정책자금 무료진단">
   <meta name="twitter:description" content="부산 소상공인·법인 맞춤 정책자금 무료 진단. 승인률 94%. 지금 바로 무료상담 신청하세요.">
-  <meta name="twitter:image" content="https://phjzzzzz-coder.github.io/smes-busan/og-image.PNG">
+  <meta name="twitter:image" content="https://phjzzzzz-coder.github.io/smes-busan/og-image.svg">
 
   <!-- 네이버 검색엔진 -->
-  <meta name="naver-site-verification" content="b8da7845ebbc94478569ab72c4142b956f073488">
+  <meta name="naver-site-verification" content="">
 
   <!-- 카카오톡 -->
   <meta property="kakao:title" content="소상공인지원센터 부산점">
@@ -87,10 +87,15 @@
     .nav-cta { background: var(--blue); color: #fff; padding: 9px 18px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 5px; }
     .nav-cta:hover { background: var(--blue-dark); }
 
+    /* SECTION ENGLISH LABEL */
+    .section-en { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--blue); font-weight: 600; margin-bottom: 8px; }
+    .section-en-dark { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.35); font-weight: 500; margin-bottom: 10px; }
+
     /* HERO */
-    .hero { background: linear-gradient(135deg, #0d2d6e 0%, #1A4FA0 60%, #2563c7 100%); padding: 80px 24px 88px; }
+    .hero { background: #080f1e; padding: 80px 24px 88px; }
     .hero-inner { max-width: 960px; margin: 0 auto; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.15); color: #fff; font-size: 13px; padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.3); margin-bottom: 20px; }
+    .hero-en { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #93c5fd; font-weight: 600; margin-bottom: 16px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); color: #fff; font-size: 13px; padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 20px; }
     .hero h1 { font-size: 38px; font-weight: 700; color: #fff; line-height: 1.35; margin-bottom: 18px; }
     .hero h1 span { color: #93c5fd; }
     .hero-desc { font-size: 16px; color: rgba(255,255,255,0.82); line-height: 1.7; margin-bottom: 36px; max-width: 540px; }
@@ -122,6 +127,31 @@
     .process-step.last h4 { color: #fff; }
     .process-step p { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
     .process-step.last p { color: rgba(255,255,255,0.7); }
+
+    /* PROMISE */
+    .promise-section { background: #080f1e; padding: 80px 24px; }
+    .promise-inner { max-width: 760px; margin: 0 auto; }
+    .promise-quote { font-size: 22px; font-weight: 600; color: #fff; line-height: 1.65; margin-bottom: 32px; border-left: 3px solid #93c5fd; padding-left: 24px; }
+    .promise-quote em { color: #93c5fd; font-style: normal; }
+    .promise-body { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 2; max-width: 640px; }
+    .promise-divider { width: 40px; height: 2px; background: #93c5fd; margin: 32px 0; }
+    .promise-points { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 40px; }
+    .promise-point { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 20px; }
+    .promise-point-num { font-size: 11px; letter-spacing: 2px; color: #93c5fd; margin-bottom: 10px; }
+    .promise-point-title { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    .promise-point-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+
+    /* GROWTH */
+    .growth-section { background: var(--bg2); padding: 80px 24px; }
+    .growth-inner { max-width: 960px; margin: 0 auto; }
+    .growth-timeline { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; margin-top: 48px; }
+    .growth-timeline::before { content: ''; position: absolute; top: 28px; left: calc(12.5%); right: calc(12.5%); height: 1px; background: var(--border); }
+    .growth-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+    .growth-dot { width: 56px; height: 56px; border-radius: 50%; background: #fff; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 18px; font-weight: 700; color: var(--text-muted); }
+    .growth-step.highlight .growth-dot { background: var(--blue); border-color: var(--blue); color: #fff; font-size: 13px; }
+    .growth-year { font-size: 12px; color: var(--blue); font-weight: 600; letter-spacing: 1px; margin-bottom: 6px; }
+    .growth-val { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .growth-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
 
     /* CASES */
     .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
@@ -225,6 +255,19 @@
       .faq-q { font-size: 15px; margin-bottom: 10px; }
       .faq-a { font-size: 14px; line-height: 1.75; }
 
+      /* OUR PROMISE */
+      .promise-section { padding: 52px 18px; }
+      .promise-quote { font-size: 18px; padding-left: 16px; }
+      .promise-body { font-size: 14px; line-height: 1.9; }
+      .promise-points { grid-template-columns: 1fr; gap: 16px; }
+
+      /* GROWTH */
+      .growth-section { padding: 52px 18px; }
+      .growth-timeline { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .growth-timeline::before { display: none; }
+      .growth-val { font-size: 15px; }
+      .growth-desc { font-size: 12px; }
+
       /* 플로팅 버튼 */
       .float-cta { bottom: 16px; right: 12px; gap: 10px; }
       .float-btn { padding: 13px 18px; font-size: 15px; }
@@ -262,10 +305,11 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
+    <div class="hero-en">Policy Fund Consulting · Busan · Since 2010</div>
     <div class="hero-badge">
       <i class="ti ti-certificate" style="font-size:14px;"></i>중소벤처기업부 공식 지정 기관
     </div>
-    <h1>정책자금, 혼자 고민하지 마세요<br><span>전문가가 처음부터 끝까지 함께합니다</span></h1>
+    <h1>정책자금, 거절당한 경험이 있으신가요?<br><span>저희는 이유부터 찾습니다</span></h1>
     <p class="hero-desc">
       소상공인·법인·스타트업을 위한 창업자금, 운전자금, 시설자금 등<br>
       최적의 정책자금을 무료로 진단해 드립니다.
@@ -306,6 +350,7 @@
 <section id="services" style="background: var(--bg);">
   <div class="wrap">
     <div class="section-head">
+      <p class="section-en">Policy Fund Guide</p>
       <h2>2026년 정책자금 안내</h2>
       <p>소상공인진흥공단 공식 자금 — 사업 현황에 맞는 최적 상품을 무료로 진단해 드립니다</p>
     </div>
@@ -489,6 +534,7 @@
 <section id="process" style="background: var(--bg2);">
   <div class="wrap">
     <div class="section-head">
+      <p class="section-en">How We Work</p>
       <h2>지원 프로세스</h2>
       <p>상담부터 입금까지 평균 3~4주 소요됩니다</p>
     </div>
@@ -527,10 +573,83 @@
   </div>
 </section>
 
+<!-- OUR PROMISE -->
+<section class="promise-section">
+  <div class="promise-inner">
+    <p class="section-en-dark">Our Promise</p>
+    <div class="promise-quote">
+      저희는 <em>서류만 대신 내는 대행사가 아닙니다.</em>
+    </div>
+    <p class="promise-body">
+      정책자금 심사에서 탈락하는 이유는 대부분 하나입니다.<br>
+      사업의 현황을 심사위원의 언어로 설명하지 못하기 때문입니다.<br><br>
+      저희는 신청 전, 매출 흐름·업력·사업계획을 함께 분석합니다.<br>
+      어떤 자금이 지금 당장 가장 유리한지 진단하고,<br>
+      서류부터 심사 당일까지 옆에서 함께합니다.
+    </p>
+    <div class="promise-divider"></div>
+    <div class="promise-points">
+      <div class="promise-point">
+        <div class="promise-point-num">01</div>
+        <div class="promise-point-title">진단 우선 원칙</div>
+        <div class="promise-point-desc">신청 전 사업 현황 분석으로 최적 자금을 선정합니다</div>
+      </div>
+      <div class="promise-point">
+        <div class="promise-point-num">02</div>
+        <div class="promise-point-title">투명한 수수료</div>
+        <div class="promise-point-desc">초기 상담 무료, 수수료는 자금 수령 성공 후만 발생합니다</div>
+      </div>
+      <div class="promise-point">
+        <div class="promise-point-num">03</div>
+        <div class="promise-point-title">심사까지 동행</div>
+        <div class="promise-point-desc">서류 준비부터 심사 당일까지 담당자가 함께합니다</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH TIMELINE -->
+<section class="growth-section">
+  <div class="growth-inner">
+    <div class="section-head">
+      <p class="section-en">Our History</p>
+      <h2>15년의 현장 경험</h2>
+      <p>부산 소상공인과 함께 걸어온 발자국입니다</p>
+    </div>
+    <div class="growth-timeline">
+      <div class="growth-step">
+        <div class="growth-dot">🌱</div>
+        <div class="growth-year">2010</div>
+        <div class="growth-val">창업 시작</div>
+        <div class="growth-desc">1인 정책자금<br>컨설팅 시작</div>
+      </div>
+      <div class="growth-step">
+        <div class="growth-dot">📈</div>
+        <div class="growth-year">2015</div>
+        <div class="growth-val">300건 달성</div>
+        <div class="growth-desc">부산 전역<br>고객 확대</div>
+      </div>
+      <div class="growth-step">
+        <div class="growth-dot">🏆</div>
+        <div class="growth-year">2021</div>
+        <div class="growth-val">850억+ 지원</div>
+        <div class="growth-desc">법인·스타트업<br>전문 서비스 추가</div>
+      </div>
+      <div class="growth-step highlight">
+        <div class="growth-dot">NOW</div>
+        <div class="growth-year">2026</div>
+        <div class="growth-val">1,200건+</div>
+        <div class="growth-desc">누적 지원 1,200건<br>승인률 94%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CASES -->
 <section id="cases" style="background: var(--bg);">
   <div class="wrap">
     <div class="section-head">
+      <p class="section-en">Growth Story</p>
       <h2>최근 지원 성공사례</h2>
       <p>실제 고객분들의 정책자금 수령 사례입니다</p>
     </div>
@@ -664,6 +783,7 @@
 <section id="consult" style="background: var(--bg2);">
   <div class="consult-wrap">
     <div class="section-head">
+      <p class="section-en">Start Now</p>
       <h2>무료 자금진단 신청</h2>
       <p>전문 컨설턴트가 24시간 내 연락드립니다</p>
     </div>
@@ -718,6 +838,7 @@
 <section id="faq" style="background: var(--bg);">
   <div class="faq-wrap">
     <div class="section-head">
+      <p class="section-en">FAQ</p>
       <h2>자주 묻는 질문</h2>
     </div>
     <div style="display:flex; flex-direction:column; gap:14px;">
